@@ -1,0 +1,233 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black; /* Set a default background color */
+}
+
+.about-us-background {
+    background-image: black;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+  }
+  
+  .about-us-box {
+    background-color: transparent; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; 
+    margin: 0 auto; 
+    margin-top: 70px;
+    max-width: 800px; 
+    height: 600px; /* Adjust height to auto */
+  }
+  
+  .about-us-box img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .about-us-title {
+    color: #e0b877; 
+    font-size: 2.5rem; 
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .about-us-description {
+    font-size: 1.2rem; 
+    color: white; 
+    line-height: 1.6; 
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-us-title {
+      font-size: 2rem; 
+    }
+  
+    .about-us-description {
+      font-size: 1.1rem; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-us-background {
+      padding: 40px 0;
+    }
+  
+    .about-us-box {
+      padding: 20px; 
+    }
+  
+    .about-us-title {
+      font-size: 1.8rem; 
+    }
+  
+    .about-us-description {
+      font-size: 1rem; 
+    }
+  }
+  
+  .navbar {
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: white; 
+    margin-left: 50px;
+}
+
+#logotxt{
+    color: white;
+    margin-top: 30px;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    color: #f5f5f5; 
+    margin-right: 20px; 
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e0b877; 
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+    margin-right: 50px; 
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer p, .footer ul {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .row {
+  margin-bottom: 20px;
+}
+
+.footer .social-media a {
+  margin-right: 15px; 
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .social-media a:hover {
+  color: #e0b877; 
+}
+
+.footer .footer-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.footer .footer-links a:hover {
+  background-color: #e0b877; 
+}
+
+.footer .social-media a i {
+  font-size: 1.2rem; 
+}
+
+.footer .social-media a i {
+    font-size: 1.2rem; 
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px; /* Space above buttons */
+}
+
+.btn-custom {
+  background-color: #e0b877; 
+  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Add this to your existing CSS */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.about-us-box img {
+  border-radius: 8px;
+  max-width: 100%; /* Maintain responsiveness */
+  height: 500px; /* Maintain aspect ratio */
+  width: 100%; /* Adjust this percentage to increase the size */
+  max-height: 500px; /* Set a maximum height to prevent the image from becoming too large */
+  animation: floating 4s ease-in-out infinite;
+}

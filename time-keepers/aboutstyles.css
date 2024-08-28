@@ -1,0 +1,158 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black; /* Set a default background color */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #e0b877; }
+}
+
+/* About Us Box Styles */
+.about-us-box {
+  background-color: #f8f9fa; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px; 
+  margin: 0 auto; 
+  max-width: 800px; 
+  height: auto;
+  position: relative; /* Position relative to handle absolute elements */
+  overflow: hidden; /* Hide overflow to keep the effect contained */
+}
+
+.about-us-description {
+  font-size: 1.2rem; 
+  color: #333333; 
+  line-height: 1.6;
+  position: relative; /* Ensure the text container is positioned */
+  overflow: hidden; /* Hide overflow for typing effect */
+  white-space: nowrap; /* Ensure text does not wrap */
+  border-right: 2px solid #e0b877; /* Cursor effect */
+  width: 0; /* Start with width 0 for animation */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; /* Apply animation */
+}
+
+/* Hover effect */
+.about-us-box:hover .about-us-description {
+  color: #e0b877; /* Change text color on hover */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; /* Restart animation */
+}
+  .navbar {
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: white; 
+    margin-left: 50px;
+}
+
+#logotxt{
+    color: white;
+    margin-top: 30px;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    color: #f5f5f5; 
+    margin-right: 20px; 
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e0b877; 
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+    margin-right: 50px; 
+}
+
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .row {
+    margin-bottom: 20px;
+}
+
+.footer .social-media a {
+    margin-right: 15px; 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .social-media a:hover {
+    color: #e0b877; 
+}
+
+.footer .footer-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #333333;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.footer .footer-links a:hover {
+    background-color: #e0b877; 
+}
+
+.footer .social-media a i {
+    font-size: 1.2rem; 
+}
+

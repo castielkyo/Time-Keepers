@@ -1,0 +1,253 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Space above buttons */
+}
+
+.btn-custom {
+    background-color: #e0b877; 
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 10px; /* Space between buttons when stacked */
+    }
+
+    .btn-custom, .btn-featured {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+.navbar {
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: white; 
+    margin-left: 50px;
+}
+
+#logotxt{
+    color: white;
+    margin-top: 30px;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    color: #f5f5f5; 
+    margin-right: 20px; 
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e0b877; 
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+    margin-right: 50px; 
+}
+
+.our-team-section {
+    padding: 60px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0)), url('Time-Keepers-BG.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.team-member {
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: stretch;
+    height: 250px;
+    margin-top: 20px;
+    border: 2px solid white;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-img {
+    border-radius: 8px;
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.team-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-name {
+    font-size: 1.2rem;
+    color: #e0b877; 
+    margin-bottom: 10px;
+}
+
+.team-role {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.team-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+        height: auto; 
+    }
+
+    .team-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .team-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .team-name {
+        font-size: 1.5rem;
+    }
+
+    .team-role {
+        font-size: 1rem;
+    }
+
+    .team-description {
+        font-size: 0.9rem;
+    }
+}
+
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .row {
+    margin-bottom: 20px;
+}
+
+.footer .social-media a {
+    margin-right: 15px; 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .social-media a:hover {
+    color: #e0b877; 
+}
+
+.footer .footer-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #333333;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.footer .footer-links a:hover {
+    background-color: #e0b877; 
+}
+
+.footer .social-media a i {
+    font-size: 1.2rem; 
+}
